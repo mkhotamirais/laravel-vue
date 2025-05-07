@@ -1,0 +1,56 @@
+/* Google Font Montserrat */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+/* @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *)); */
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --font-sans: "Instrument Sans", ui-sans-serif, system-ui, sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+        "Noto Color Emoji";
+    --font-montserrat: "Montserrat", ui-sans-serif, system-ui, sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+        "Noto Color Emoji";
+    --color-black: #333333;
+    --color-primary: green;
+    --color-primary-dark: darkgreen;
+    --color-dark: oklch(37.2% 0.044 257.287);
+    --color-dark-2: oklch(27.9% 0.041 260.031);
+    --color-danger: red;
+}
+
+.container {
+    @apply max-w-6xl mx-auto h-full px-3 sm:px-6 lg:px-8;
+}
+
+button,
+a {
+    @apply cursor-pointer;
+}
+
+.h1 {
+    @apply capitalize text-4xl font-bold;
+}
+
+.h2 {
+    @apply capitalize text-3xl font-semibold;
+}
+
+.layer {
+    @apply fixed inset-0 bg-none z-40;
+}
+
+.link {
+    @apply text-primary hover:text-primary-dark hover:underline transition-all text-sm;
+}
+
+.btn {
+    @apply px-6 py-2 text-sm font-semibold block text-center rounded-lg bg-primary hover:bg-primary-dark transition-all text-white disabled:bg-slate-400 disabled:cursor-wait;
+}

@@ -1,0 +1,8 @@
+{
+  "main_menu": [
+    {"label": "Home", "url": "/", "name": "home"},
+    {"label": "About", "url": "/about", "name": "about"},
+    {"label": "Listing", "url": "/listing", "name": "listing.index"}
+  ],
+  "welcome": "Welcome"
+}
