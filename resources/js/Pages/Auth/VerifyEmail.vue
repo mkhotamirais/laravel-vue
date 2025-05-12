@@ -16,7 +16,7 @@ const submit = () => {
 
   <section class="container">
     <div
-      class="w-full py-4 sm:w-2/3 mx-auto bg-white dark:bg-dark-2 my-12 rounded-xl p-4"
+      class="max-w-md py-4 mx-auto bg-white dark:bg-dark-2 my-12 rounded-xl p-4"
     >
       <div class="mb-8">
         <SessMsg :msg="msgVerify" />

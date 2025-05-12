@@ -16,7 +16,7 @@ const submit = () => {
 
   <section class="container">
     <div
-      class="w-1/2 mx-auto bg-white dark:bg-dark-2 my-12 p-8 rounded-lg shadow-lg"
+      class="max-w-md mx-auto bg-white dark:bg-dark-2 my-12 p-8 rounded-lg shadow-lg"
     >
       <div class="mb-8 text-center">
         <p>

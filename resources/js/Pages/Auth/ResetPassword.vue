@@ -24,7 +24,7 @@ const submit = () => {
 
   <section class="container">
     <div
-      class="w-full md:w-1/2 my-12 mx-auto bg-white dark:bg-dark-2 p-8 rounded-lg shadow-lg"
+      class="max-w-md my-12 mx-auto bg-white dark:bg-dark-2 p-8 rounded-lg shadow-lg"
     >
       <div class="mb-8 text-center">
         <h1 class="h1">Enter your new password</h1>

@@ -15,7 +15,7 @@ const submit = () => {
   <Head title=" - Password Confirmation" />
   <section class="container">
     <div
-      class="w-full md:w-1/2 my-12 p-8 bg-white dark:bg-dark-2 shadow-lg rounded-lg mx-auto"
+      class="max-w-md my-12 p-8 bg-white dark:bg-dark-2 shadow-lg rounded-lg mx-auto"
     >
       <div class="mb-8 text-center">
         <p>
