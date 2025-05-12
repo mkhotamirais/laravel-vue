@@ -2,6 +2,7 @@
 const model = defineModel();
 defineProps({
   label: String,
+  id: String,
   icon: String,
   placeholder: { type: String, default: "" },
   error: String,
@@ -24,6 +25,8 @@ defineProps({
         </span>
       </div>
       <textarea
+        :id="id"
+        :name="id"
         rows="6"
         :placeholder="placeholder"
         v-model="model"

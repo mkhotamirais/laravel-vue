@@ -2,6 +2,7 @@
 const model = defineModel();
 defineProps({
   label: String,
+  id: String,
   icon: String,
   placeholder: { type: String, default: "" },
   type: { type: String, default: "text" },
@@ -11,7 +12,7 @@ defineProps({
 
 <template>
   <div class="mb-3">
-    <label :for="label" class="text-sm font-medium mb-0.5">{{ label }}</label>
+    <label :for="id" class="text-sm font-medium mb-0.5">{{ label }}</label>
     <div class="relative rounded-md">
       <div
         class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3"
@@ -21,6 +22,8 @@ defineProps({
         </span>
       </div>
       <input
+        :id="id"
+        :name="id"
         :type="type"
         :placeholder="placeholder"
         v-model="model"

@@ -22,7 +22,7 @@ const submit = () => {
   <section class="">
     <div class="container">
       <div
-        class="p-6 lg:p-8 my-12 w-full sm:w-2/3 lg:w-1/2 bg-white dark:bg-dark-2 mx-auto rounded-lg shadow"
+        class="p-6 lg:p-8 my-12 max-w-md bg-white dark:bg-dark-2 mx-auto rounded-lg shadow"
       >
         <div class="mb-4">
           <h1 class="h1">register</h1>
